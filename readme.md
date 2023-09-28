@@ -13,3 +13,12 @@ DROP TABLE IF EXISTS [table-name]; // add on top of file to create db for no dup
 SELECT last_name FROM employees WHERE department = 'Chemistry';
 
 SELECT name, age_yrs, weight_lbs FROM puppies WHERE weight_lbs > 25 AND weight_lbs < 30;  // AND OR NOT
+
+
+DELETE FROM puppies WHERE microchipped = 0;
+
+
+UPDATE friends SET last_name = 'Blue' WHERE first_name = 'Amy' AND last_name = 'Pond';
+
+UPDATE friends
+SET last_name = 'Blue' WHERE first_name = 'Tyler' AND last_name = 'Sky';
